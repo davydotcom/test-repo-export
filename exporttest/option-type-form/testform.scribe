@@ -8,7 +8,18 @@ resource "option-type-form" "testform" {
       name = "Advanced"
       collapsible = false
       defaultCollapsed = false
-      options = [ { code = "e780a349-2a84-408c-afd0-22c809929c21" } ]
+      options = [
+        {
+          code = "e780a349-2a84-408c-afd0-22c809929c21"
+          name = "e780a349-2a84-408c-afd0-22c809929c21"
+          uuid = "4a76d05a-d944-4fae-8e21-19fdb8adcd1c"
+          fieldContext = "config.customOptions"
+          fieldLabel = "Phone Number"
+          fieldName = "phone"
+          formField = true
+          placeHolder = "867-5309"
+        }
+      ]
     }
   ]
   labels = [ "export" ]
