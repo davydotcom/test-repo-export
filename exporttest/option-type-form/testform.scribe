@@ -2,6 +2,15 @@ resource "option-type-form" "testform" {
   code = "testform"
   name = "Test Form"
   uuid = "3406ac28-cbdf-4101-b476-885934922f0b"
+  field-groups = [
+    {
+      code = "3c57b9c8-b93b-4751-8f01-6411c29e436e"
+      name = "Advanced"
+      collapsible = false
+      defaultCollapsed = false
+      options = [ { code = "e780a349-2a84-408c-afd0-22c809929c21" } ]
+    }
+  ]
   labels = [ "export" ]
   options = [
     {
