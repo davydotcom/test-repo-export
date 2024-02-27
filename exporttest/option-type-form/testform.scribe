@@ -18,6 +18,7 @@ resource "option-type-form" "testform" {
           fieldName = "phone"
           formField = true
           placeHolder = "867-5309"
+          refCode = "e780a349-2a84-408c-afd0-22c809929c21"
         }
       ]
     }
@@ -34,6 +35,19 @@ resource "option-type-form" "testform" {
       formField = true
       placeHolder = "Johnny Appleseed"
       refCode = "6270a945-53da-472c-85e6-8051468b6950"
+    },
+    {
+      code = "2dcb1506-348a-4890-867d-861ef2dd62fa"
+      name = "2dcb1506-348a-4890-867d-861ef2dd62fa"
+      uuid = "36abd52c-a26d-4fca-8258-e6370e67bc61"
+      config = { multiSelect = false }
+      displayOrder = 1
+      fieldContext = "config.customOptions"
+      fieldLabel = "My Dropdown"
+      fieldName = "input3"
+      formField = true
+      optionList = { name = "My List" }
+      type = "select"
     }
   ]
 }

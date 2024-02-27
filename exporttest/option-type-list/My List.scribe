@@ -1,0 +1,9 @@
+resource "option-type-list" "My List" {
+  name = "My List"
+  uuid = "b804f6b6-f428-4aa0-acf3-74dc13d97b82"
+  initialDataset = <<EOFSCRIBE
+Davids App,1
+Lauras App,2
+EOFSCRIBE
+  type = "manual"
+}
