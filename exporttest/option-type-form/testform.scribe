@@ -1,0 +1,19 @@
+resource "option-type-form" "testform" {
+  code = "testform"
+  name = "Test Form"
+  uuid = "3406ac28-cbdf-4101-b476-885934922f0b"
+  labels = [ "export" ]
+  options = [
+    {
+      code = "6270a945-53da-472c-85e6-8051468b6950"
+      name = "6270a945-53da-472c-85e6-8051468b6950"
+      uuid = "9d84baa3-e3f3-44cb-a886-0a85b2017a18"
+      fieldContext = "config.customOptions"
+      fieldLabel = "Name"
+      fieldName = "firstName"
+      formField = true
+      placeHolder = "Johnny Appleseed"
+      refCode = "6270a945-53da-472c-85e6-8051468b6950"
+    }
+  ]
+}
