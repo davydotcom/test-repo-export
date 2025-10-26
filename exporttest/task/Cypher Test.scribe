@@ -1,0 +1,15 @@
+resource "task" "Cypher Test" {
+  name = "Cypher Test"
+  uuid = "b04488a2-8937-42ba-a8d9-5a6fd96c2fef"
+  dateCreated = "2020-09-15T13:42:12.000Z"
+  executeTarget = "local"
+  labels = [ "export" ]
+  lastUpdated = "2025-10-26T22:45:18.000Z"
+  options = [
+    {
+      content = { uuid = "a7ec3aa8-2a8a-4369-a93d-6214de0e6ff5" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
